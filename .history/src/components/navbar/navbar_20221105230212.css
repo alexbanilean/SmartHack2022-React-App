@@ -1,0 +1,22 @@
+.ckmint__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 6rem;
+}
+
+.ckmint__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ckmint__navabr-links-logo {
+    margin-right: 2rem;
+}
+
+.ckmint__navabr-links-logo img {
+    
+}
