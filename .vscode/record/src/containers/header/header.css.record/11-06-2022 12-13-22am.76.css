@@ -1,0 +1,12 @@
+.ckmint__header {
+    display: flex;
+}
+
+.ckmint__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
