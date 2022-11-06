@@ -7,8 +7,8 @@ import './index.css';
 
 ReactDOM.render(
     <React.StrictMode>
-    <MetaMaskProvider>
-        <App />
-    </MetaMaskProvider>
+        <MetaMaskProvider>
+            <App />
+        </MetaMaskProvider>
     </React.StrictMode>
     , document.getElementById('root'));
