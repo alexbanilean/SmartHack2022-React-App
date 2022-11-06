@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './form.css'
 
 const Form = (props) => {
 
@@ -33,22 +34,24 @@ const Form = (props) => {
       .catch(error => console.log('error', error));
   }
     
-  return (
-    <form onSubmit={handleSubmit}>
-      <label>Enter token name:
-        <input type="text" onChange={(e) => setName(e.target.value)} />
-      </label>
-      <label>Enter token symbol:
-        <input type="text" onChange={(e) => setSymbol(e.target.value)} />
-      </label>
-      <label>Enter token supply:
-        <input type="text" onChange={(e) => setSupply(e.target.value)} />
-      </label>
-      <label>Enter token decimals:
-        <input type="text" onChange={(e) => setDecimals(e.target.value)} />
-      </label>
-      <input type="submit" />
-    </form>
+  return ( <form onSubmit={handleSubmit} className="form-container">
+        <div className='form-title gradient__text'>Create token form</div>
+        <label>Enter token name&#160;:&#160;
+            <input type="text" onChange={(e) => setName(e.target.value)} />
+        </label>
+        <label>Enter token symbol&#160;:&#160;
+            <input type="text" onChange={(e) => setSymbol(e.target.value)} />
+        </label>
+        <label>Enter token supply&#160;:&#160;
+            <input type="text" onChange={(e) => setSupply(e.target.value)} />
+        </label>
+        <label>Enter token decimals&#160;:&#160;
+            <input type="text" onChange={(e) => setDecimals(e.target.value)} />
+        </label>
+        <label className="submit">
+            <input type="submit" value="Submit"/>
+        </label>
+        </form>
   )
 }
 
