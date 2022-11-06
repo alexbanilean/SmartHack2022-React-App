@@ -1,0 +1,14 @@
+.form-container {
+    color: #fff;
+}
+
+.form-container
+
+.form-container label input,
+.form-container input
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5rem;
+}

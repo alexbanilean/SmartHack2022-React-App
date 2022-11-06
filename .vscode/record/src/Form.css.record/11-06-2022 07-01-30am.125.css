@@ -1,0 +1,9 @@
+.form-container {
+    color: #fff;
+}
+
+.form-container label{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+}

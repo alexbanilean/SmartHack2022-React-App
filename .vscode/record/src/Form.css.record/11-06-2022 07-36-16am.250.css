@@ -1,0 +1,24 @@
+.form-container {
+    color: #fff;
+}
+
+.form-container label{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-container label input,
+.form-container input
+{
+    display: flex;
+    justify-content: flex-start;
+    alignItems: center;
+    flexDirection: row,
+    width: 20vw,
+    padding: 5rem,
+    borderStyle: solid,
+    borderWidth: 1,
+    borderColor: green,
+    borderRadius: 5,
+    color: green,
+}

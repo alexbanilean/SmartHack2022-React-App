@@ -1,0 +1,15 @@
+.form-container {
+    color: #fff;
+}
+
+.form-container label,
+.form-container input
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: ;
+    align-items: stretch;
+    line-height: 28px;
+    padding: 5rem;
+}

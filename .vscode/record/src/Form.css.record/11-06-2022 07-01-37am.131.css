@@ -1,0 +1,10 @@
+.form-container {
+    color: #fff;
+}
+
+.form-container label{
+    display: flex;
+    flex-direction: row;
+    jus
+    padding: 5rem;
+}

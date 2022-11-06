@@ -1,0 +1,30 @@
+.form-container {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem;
+}
+
+.form-container label{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+}
+
+.form-container label input,
+.form-container input
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    height: 1rem;
+    width: 5rem;
+    border-style: solid;
+    border-width: 1;
+    background-color: aqua;
+    border-color: green;
+    border-radius: 5px;
+    color: green;
+}
