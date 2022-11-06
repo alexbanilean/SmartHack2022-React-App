@@ -12,6 +12,7 @@ const Form = (props) => {
     // post to backend
     event.preventDefault();
     console.log(name, symbol, supply, decimals, props.address);
+    
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
 
