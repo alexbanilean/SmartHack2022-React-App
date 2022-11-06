@@ -1,0 +1,16 @@
+import React from 'react'
+import { Feature } from '../../components'
+import './what.css'
+
+const What = () => {
+  return (
+    <div className='ckmint__what section__padding' id='#what'>
+      <div className='ckmint_what-feature'>
+        <Feature />
+      </div>
+      <div className=''
+    </div>
+  )
+}
+
+export default What
