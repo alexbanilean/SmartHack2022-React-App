@@ -25,7 +25,7 @@ const App = () => {
     <div className='App'>
         <div className='gradient__bg'>
           <Navbar status = {status} connect = {connect}/>
-          <Header />
+          <Header account = {account}/>
         </div>
         <What />
         <Footer />
