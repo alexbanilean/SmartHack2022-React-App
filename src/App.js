@@ -4,7 +4,7 @@ import { Footer, What, Header, FAQ, Wallet} from './containers'
 import './App.css'
 import { useState } from 'react'
 import { useMetaMask } from "metamask-react";
-
+import Form from './Form'
 
 const App = () => {
   const { status, connect, account, chainId, ethereum } = useMetaMask();
@@ -14,9 +14,9 @@ const App = () => {
     <div className='App'>
         <div className='gradient__bg'>
           <Navbar status = {status} connect = {connect}/>
-          {editingForm ? null: <Header account = {account}/>}
-
-          {/* <Header account = {account}/> */}
+          {editingForm ? 
+            <Form account = {account} setEditingForm = {setEditingForm}/>  
+            : <Header account = {account} setEditingForm = {setEditingForm}/>}
         </div>
         <What />
         <Footer />

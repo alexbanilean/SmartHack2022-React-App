@@ -1,13 +1,6 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client';
 import './header.css'
 import cloud from '../../assets/cloud.svg'
-import Form from '../../Form'
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-
-// function renderForm(account){
-  // root.render(<Form account = {account}/>);
-// }
 
 const Header = (props) => {
   return (
@@ -16,8 +9,7 @@ const Header = (props) => {
         <h1 className='gradient__text'>Create your own cryptocurrency with no code required</h1>
         <p> Our easy-to-use crypto generator allows you to make your own custom token on the Ethereum blockchain without needing any programming experience.</p>
         <div className='ckmint__header-content-input'>
-          {/* <button type='button' onClick={renderForm(props.account)}>Get started</button> */}
-          <button type='button'>Get started</button>
+          <button type='button'onClick={() => {props.setEditingForm(true)}}>Get started</button>
           <button type='button'>Learn more</button>
         </div>
       </div>
