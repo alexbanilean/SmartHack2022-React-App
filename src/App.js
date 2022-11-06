@@ -8,18 +8,6 @@ import { useMetaMask } from "metamask-react";
 
 const App = () => {
   const { status, connect, account, chainId, ethereum } = useMetaMask();
-  // const x = useMetaMask();
-
-  // const [status, setStatus] = useState("Hello"); 
-
-  // setStatus("yay");
-
-  // aici sunt in x
-  // const status = x.status;
-  // const connect = x.connect;
-  // const account = x.account;
-  // const chainId = x.chainId;
-  // const ethereum = x.ethereum;
 
   return (
     <div className='App'>

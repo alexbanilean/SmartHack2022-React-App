@@ -3,32 +3,6 @@ import './navbar.css'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/logo.svg'
 import { useState } from 'react'
-import status from '../../App'
-import connect from '../../App'
-import account from '../../App'
-import ethereum from '../../App'
-import chainId from '../../App'
-
-
-
-function ConnectToWallet(state){
-
-  // const { status, connect, account, chainId, ethereum } = useMetaMask();
-  return <div> 
-      {status}
-      </div>
-  //alert(state.status);
-
-  // if (status === "initializing") return <div>Synchronisation with MetaMask ongoing...</div>
-
-  // if (status === "unavailable") return <div>MetaMask not available :</div>
-
-  // if (status === "notConnected") return <button onClick={connect}>Connect to MetaMask</button>
-
-  // if (status === "connecting") return <div>Connecting...</div>
-
-  // if (status === "connected") return <div>Connected account {account} on chain ID {chainId}</div>
-}
 
 const Menu = (props) => (
   <>
