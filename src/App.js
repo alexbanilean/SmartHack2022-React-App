@@ -8,12 +8,15 @@ import { useMetaMask } from "metamask-react";
 
 const App = () => {
   const { status, connect, account, chainId, ethereum } = useMetaMask();
+  const [editingForm, setEditingForm] = useState(false);
 
   return (
     <div className='App'>
         <div className='gradient__bg'>
           <Navbar status = {status} connect = {connect}/>
-          <Header account = {account}/>
+          {editingForm ? null: <Header account = {account}/>}
+
+          {/* <Header account = {account}/> */}
         </div>
         <What />
         <Footer />
