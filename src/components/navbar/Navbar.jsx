@@ -10,8 +10,13 @@ import ethereum from '../../App'
 import chainId from '../../App'
 
 
+
 function ConnectToWallet(state){
 
+  // const { status, connect, account, chainId, ethereum } = useMetaMask();
+  return <div> 
+      {status}
+      </div>
   //alert(state.status);
 
   // if (status === "initializing") return <div>Synchronisation with MetaMask ongoing...</div>
@@ -25,16 +30,18 @@ function ConnectToWallet(state){
   // if (status === "connected") return <div>Connected account {account} on chain ID {chainId}</div>
 }
 
-const Menu = () => (
+const Menu = (props) => (
   <>
   <p><a href="#home">Home</a></p>
   <p><a href="#what">What is CryptoMint?</a></p>
-  <p><a href="#faq">FAQ</a></p>
-  <p><button onClick={ConnectToWallet}>Connect Wallet</button></p>
+  <p><a href="#faq">{props.status}</a></p>
+  <p><a href="#" onClick = {props.connect}>Connect to wallet</a></p>
+  <p><ConnectToWallet></ConnectToWallet></p>
+  <p>status: </p>
   </>
 )
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
@@ -44,7 +51,7 @@ const Navbar = () => {
           <img src={logo} alt='logo' />
         </div>
         <div className='ckmint__navbar-links_container'>
-          <Menu />
+          <Menu connect = {props.connect} status = {props.status}/>
         </div>
       </div>
       <div className='ckmint__navbar-menu'>

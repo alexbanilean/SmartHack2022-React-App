@@ -3,14 +3,14 @@ import { Feature, Navbar } from './components'
 import { Footer, What, Header, FAQ, Wallet} from './containers'
 import './App.css'
 import { useState } from 'react'
-
 import { useMetaMask } from "metamask-react";
 
-const App = () => {
 
+const App = () => {
+  const { status, connect, account, chainId, ethereum } = useMetaMask();
   // const x = useMetaMask();
 
-  const [status, setStatus] = useState("Hello"); 
+  // const [status, setStatus] = useState("Hello"); 
 
   // setStatus("yay");
 
@@ -24,7 +24,7 @@ const App = () => {
   return (
     <div className='App'>
         <div className='gradient__bg'>
-          <Navbar status = {status} setStatus = {setStatus}/>
+          <Navbar status = {status} connect = {connect}/>
           <Header />
         </div>
         <What />
