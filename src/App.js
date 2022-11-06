@@ -8,11 +8,11 @@ import { useMetaMask } from "metamask-react";
 
 const App = () => {
 
-  const x = useMetaMask();
+  // const x = useMetaMask();
 
   const [status, setStatus] = useState("Hello"); 
 
-  setStatus("yay");
+  // setStatus("yay");
 
   // aici sunt in x
   // const status = x.status;
