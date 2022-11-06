@@ -1,6 +1,4 @@
-import React from 'react'
-import { useState } from 'react'
-
+import React, { useState } from 'react'
 
 const Form = (props) => {
 
@@ -33,25 +31,6 @@ const Form = (props) => {
       .then(response => response.text())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));
-
-    //     event.preventDefault();
-
-    //     const requestOptions = {
-    //       method: 'POST',
-    //       headers: { 'Content-Type': 'application/json' },
-    //       body: JSON.stringify(event)
-    //   };
-    //   fetch('http://localhost:8080/create_token/' + props.account, requestOptions)
-    //       .then(response => response.json())
-    //       .then(data => this.setState({ tokenAddress: data }));
-
-    // if(alert(`Crypto coin ${name} starts creating...`)){
-
-    // }
-    // else{ 
-    //     alert(`Crypto coin succesfully created.`)    
-    //     window.location.reload();
-    // }
   }
     
   return (
